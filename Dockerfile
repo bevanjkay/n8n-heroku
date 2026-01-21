@@ -1,9 +1,10 @@
 FROM n8nio/n8n:1.123.16
 USER root
 
+RUN npm install -g fuzzball
+
 WORKDIR /home/node/packages/cli
 
-RUN npm install fuzzball
 
 ENTRYPOINT []
 
